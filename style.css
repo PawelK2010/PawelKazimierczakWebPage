@@ -92,13 +92,9 @@ a {
     linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.42) 50%, rgba(0, 0, 0, 0.74));
 }
 
-.topbar,
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
-
 .topbar {
+  position: relative;
+  z-index: 4;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -173,6 +169,8 @@ a {
 }
 
 .hero-content {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -423,26 +421,29 @@ h3 {
 
   .has-js .menu-toggle {
     display: inline-block;
-    z-index: 2;
+    position: relative;
+    z-index: 7;
   }
 
   .has-js .nav-links {
-    position: absolute;
-    top: 4.2rem;
-    right: 0;
-    left: 0;
+    position: fixed;
+    top: 4.4rem;
+    right: 0.5rem;
+    left: 0.5rem;
     display: grid;
     gap: 0.1rem;
     padding: 0.65rem;
-    background: rgba(8, 8, 10, 0.97);
-    border: 1px solid var(--line);
+    background: rgba(7, 7, 9, 0.985);
+    border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: 20px;
+    backdrop-filter: blur(18px);
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
     max-height: calc(100dvh - 5.5rem);
     overflow-y: auto;
     box-shadow: 0 22px 60px rgba(0, 0, 0, 0.45);
+    z-index: 6;
     transition: opacity 0.2s ease, transform 0.2s ease;
   }
 
@@ -461,6 +462,11 @@ h3 {
 
   .nav-links a {
     padding: 0.9rem;
+    border-radius: 14px;
+  }
+
+  .has-js .nav-links a {
+    background: rgba(255, 255, 255, 0.02);
   }
 
   .nav-cta {
