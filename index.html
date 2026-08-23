@@ -1,254 +1,276 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Pawel Kazimierczak is a student at the European School of Alicante, a future engineering student, award-winning science symposium participant, and semi-professional basketball player."
+      content="CostaReply convierte consultas incompletas en solicitudes de reserva claras y multilingües para empresas de actividades en Alicante."
     />
-    <title>Pawel Kazimierczak | Student Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Orbitron:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="theme-color" content="#0b2730" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:title" content="CostaReply — Reservas claras, desde el primer mensaje" />
+    <meta property="og:description" content="Solicitudes de reserva completas y multilingües, sin cambiar las herramientas que ya utilizas." />
+    <meta property="og:image" content="https://pawel.kazimierczak.eu/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CostaReply — Reservas claras, desde el primer mensaje" />
+    <meta name="twitter:description" content="Solicitudes de reserva completas y multilingües, sin cambiar las herramientas que ya utilizas." />
+    <meta name="twitter:image" content="https://pawel.kazimierczak.eu/og.png" />
+    <title>CostaReply — Reservas claras, desde el primer mensaje</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="no-js">
-    <div class="page-shell">
-      <header class="hero" id="top">
-        <nav class="topbar" aria-label="Main navigation">
-          <a class="brand" href="#top">
-            <span class="brand-mark"></span>
-            <span class="brand-text">PAWEL</span>
-          </a>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="CostaReply, inicio">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
+        <span>CostaReply</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#demo">Demo</a>
+        <a class="nav-cta" href="#demo">Probar demo</a>
+      </nav>
+    </header>
 
-          <button
-            class="menu-toggle"
-            type="button"
-            aria-expanded="false"
-            aria-controls="nav-menu"
-            aria-label="Open navigation"
-          >
-            <span></span>
-            <span></span>
-          </button>
-
-          <div class="nav-links" id="nav-menu">
-            <a href="#about">About</a>
-            <a href="#science">Science</a>
-            <a href="#basketball">Basketball</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact" class="nav-cta">Contact</a>
-          </div>
-        </nav>
-
-        <div class="hero-overlay"></div>
-
-        <div class="hero-content reveal">
-          <p class="kicker">Student Portfolio</p>
-          <h1>PAWEL KAZIMIERCZAK</h1>
+    <main id="inicio">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Reservas más claras. Menos mensajes.</p>
+          <h1 id="hero-title">De una consulta incompleta a una reserva lista para responder.</h1>
           <p class="hero-text">
-            Polish student at the European School of Alicante, aiming for a future
-            in engineering and already building that path through code, hardware,
-            research, and high-level basketball.
+            CostaReply recoge actividad, fecha, personas y requisitos en el idioma de tu cliente. Tu equipo recibe todo ordenado en el canal que ya utiliza.
           </p>
-
-          <div class="hero-metrics" aria-label="Profile highlights">
-            <span>Born in 2010</span>
-            <span>European School of Alicante</span>
-            <span>Lucentum Alicante</span>
-            <span>First Innovation Award</span>
-          </div>
-
           <div class="hero-actions">
-            <a class="button button-primary" href="#contact">Get in touch</a>
-            <a class="button button-secondary" href="#science">See my project</a>
+            <a class="button button-primary" href="#demo">Probar la demo <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#como-funciona">Ver cómo funciona</a>
+          </div>
+          <div class="hero-notes" aria-label="Características principales">
+            <span>ES · EN · DE · PL</span>
+            <span>Sin cambiar tu WhatsApp</span>
+            <span>Sin instalar una app</span>
           </div>
         </div>
-      </header>
 
-      <main class="content-shell">
-        <section class="section reveal" id="about">
-          <div class="section-intro">
-            <p class="section-label">About Me</p>
-            <h2>Curious, ambitious, and building toward engineering</h2>
-          </div>
-
-          <div class="about-grid">
-            <article class="panel panel-large">
-              <p>
-                My name is Pawel, I am a Polish student born in 2010 and I am
-                currently studying at the European School of Alicante. I want to
-                study engineering in the future, although I have not decided on the
-                exact specialisation yet.
-              </p>
-              <p>
-                What already feels clear is what I enjoy most: coding, programming,
-                and hardware-related projects. I like understanding how systems work,
-                solving practical problems, and turning ideas into something real.
-              </p>
-            </article>
-
-            <aside class="panel facts-panel">
-              <h3>Quick Facts</h3>
-              <ul class="fact-list">
-                <li>Student based in Alicante, Spain</li>
-                <li>Interested in engineering, software, and hardware</li>
-                <li>Innovation award winner at the European School Science Symposium</li>
-                <li>Semi-professional basketball player</li>
-              </ul>
-            </aside>
-          </div>
-        </section>
-
-        <section class="section reveal" id="science">
-          <div class="section-intro">
-            <p class="section-label">Science Symposium</p>
-            <h2>First Innovation Award for a low-cost rehabilitation solution</h2>
-          </div>
-
-          <div class="science-layout">
-            <article class="panel panel-large">
-              <p>
-                I participated in the European School Science Symposium and won the
-                <strong>First Innovation Award</strong>. My project focused on
-                making wrist rehabilitation more accessible with a low-cost glove
-                designed to support recovery exercises.
-              </p>
-              <p>
-                The final report explains the motivation behind the idea, the glove
-                design, the testing process, and the results collected from several
-                users over four weeks. The goal was to create a simpler and more
-                affordable tool for people recovering from wrist injuries.
-              </p>
-            </article>
-
-            <article class="panel report-panel">
-              <h3>Project Report</h3>
-              <p class="report-title">Rehabilitation of Wrist Injuries</p>
-              <p>
-                Award-winning science symposium project exploring an affordable
-                rehabilitation glove for wrist recovery.
-              </p>
-              <div class="report-links">
-                <a
-                  class="button button-primary"
-                  href="assets/docs/science-symposium-final-report.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Open final report PDF
-                </a>
-                <a
-                  class="button button-secondary"
-                  href="assets/docs/science-symposium-certificate.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View award certificate
-                </a>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="section reveal" id="basketball">
-          <div class="section-intro">
-            <p class="section-label">Basketball</p>
-            <h2>Competing in a semi-professional environment</h2>
-          </div>
-
-          <div class="split-layout">
-            <div class="panel image-panel">
-              <img
-                src="assets/img/pawel-basketball.jpg"
-                alt="Pawel playing basketball with Lucentum Alicante teammates."
-              />
+        <div class="hero-product" aria-label="Ejemplo de una solicitud organizada en CostaReply">
+          <div class="product-glow"></div>
+          <div class="browser-card">
+            <div class="browser-top"><span></span><span></span><span></span><b>costareply.es/demo</b></div>
+            <div class="request-head">
+              <div class="request-icon">CR</div>
+              <div><small>NUEVA SOLICITUD</small><strong>Salida de pesca</strong></div>
+              <span class="status">Completa</span>
             </div>
-
-            <article class="panel panel-large">
-              <p>
-                I also play basketball in a semi-professional way, and my current
-                club is <strong>Lucentum Alicante</strong>. Basketball has helped me
-                develop discipline, resilience, teamwork, and focus.
-              </p>
-              <p>
-                Sport and academics push me in the same direction: to keep learning,
-                stay ambitious, and perform well under pressure. That mindset is a
-                big part of who I am.
-              </p>
-            </article>
+            <div class="request-grid">
+              <div><small>Fecha preferida</small><strong>28 agosto · 09:00</strong></div>
+              <div><small>Grupo</small><strong>3 adultos</strong></div>
+              <div><small>Experiencia</small><strong>Principiantes</strong></div>
+              <div><small>Idioma</small><strong>Deutsch</strong></div>
+            </div>
+            <div class="message-preview"><span>✓</span><p>Solicitud preparada para enviar por WhatsApp</p></div>
           </div>
-        </section>
+          <div class="floating-chip chip-one">4 idiomas</div>
+          <div class="floating-chip chip-two">Todo en un mensaje</div>
+        </div>
+      </section>
 
-        <section class="section reveal" id="gallery">
-          <div class="section-intro">
-            <p class="section-label">Gallery</p>
-            <h2>A few moments from the court</h2>
+      <section class="signal-strip" aria-label="Propuesta de valor">
+        <p>Creado para negocios que trabajan mientras sus clientes escriben.</p>
+        <div>
+          <span>Escuelas náuticas</span>
+          <span>Alquiler de barcos</span>
+          <span>Surf y paddle</span>
+          <span>Experiencias y tours</span>
+        </div>
+      </section>
+
+      <section class="section steps-section" id="como-funciona" aria-labelledby="steps-title">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Cómo funciona</p>
+          <h2 id="steps-title">Una entrada clara.<br />Una respuesta más rápida.</h2>
+          <p>CostaReply se coloca antes de tu WhatsApp o correo. No obliga a tu equipo a aprender otra herramienta.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <span class="step-number">01</span>
+            <div class="step-symbol question-symbol" aria-hidden="true">?</div>
+            <h3>El cliente responde</h3>
+            <p>Actividad, fecha, personas y requisitos en su propio idioma.</p>
+          </article>
+          <article class="step-card reveal">
+            <span class="step-number">02</span>
+            <div class="step-symbol sort-symbol" aria-hidden="true"><i></i><i></i><i></i></div>
+            <h3>CostaReply ordena</h3>
+            <p>Valida los campos necesarios y prepara un resumen sin datos olvidados.</p>
+          </article>
+          <article class="step-card reveal">
+            <span class="step-number">03</span>
+            <div class="step-symbol send-symbol" aria-hidden="true">↗</div>
+            <h3>Tu equipo lo recibe</h3>
+            <p>Un solo mensaje estructurado en el canal que ya utilizáis.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section comparison-section" aria-labelledby="comparison-title">
+        <div class="comparison-copy reveal">
+          <p class="section-kicker">El cambio</p>
+          <h2 id="comparison-title">Menos conversación administrativa. Más reservas listas para cerrar.</h2>
+          <p>No automatizamos la relación con tu cliente. Quitamos las preguntas repetidas que ocurren antes de poder ayudarle.</p>
+          <ul class="check-list">
+            <li>Preguntas distintas para cada actividad</li>
+            <li>Información en español para tu equipo</li>
+            <li>Configuración adaptada a tus reglas</li>
+          </ul>
+        </div>
+        <div class="conversation-board reveal" aria-label="Comparación entre una consulta normal y una solicitud CostaReply">
+          <div class="conversation-column before-column">
+            <div class="column-label"><span></span> Sin CostaReply</div>
+            <div class="chat-bubble incoming">Hola, ¿tenéis sitio?</div>
+            <div class="chat-bubble outgoing">¡Hola! ¿Para qué actividad y qué día?</div>
+            <div class="chat-bubble incoming short">Para pesca.</div>
+            <div class="chat-bubble outgoing">¿Cuántas personas sois?</div>
+            <p class="thread-note">4 mensajes y aún faltan datos</p>
+          </div>
+          <div class="conversation-column after-column">
+            <div class="column-label"><span></span> Con CostaReply</div>
+            <div class="structured-message">
+              <small>SOLICITUD COMPLETA</small>
+              <strong>Salida de pesca</strong>
+              <dl>
+                <div><dt>Fecha</dt><dd>28 agosto</dd></div>
+                <div><dt>Grupo</dt><dd>3 adultos</dd></div>
+                <div><dt>Nivel</dt><dd>Principiante</dd></div>
+                <div><dt>Idioma</dt><dd>Alemán</dd></div>
+              </dl>
+            </div>
+            <p class="thread-note ready-note">Lista para responder</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo-section" id="demo" aria-labelledby="demo-title">
+        <div class="section demo-wrap">
+          <div class="demo-intro reveal">
+            <p class="section-kicker light-kicker">Demo interactiva</p>
+            <h2 id="demo-title">Prueba el mensaje que recibiría tu equipo.</h2>
+            <p>Este ejemplo no envía ni guarda información. Solo muestra cómo CostaReply convierte respuestas en una solicitud ordenada.</p>
+            <div class="language-list" aria-label="Idiomas disponibles">
+              <span>Español</span><span>English</span><span>Deutsch</span><span>Polski</span>
+            </div>
           </div>
 
-          <div class="gallery-grid">
-            <figure class="gallery-card panel">
-              <img
-                src="assets/img/pawel-portrait.jpg"
-                alt="Pawel jumping for the ball during a basketball game."
-              />
-            </figure>
-            <figure class="gallery-card panel">
-              <img
-                src="assets/img/pawel-basketball.jpg"
-                alt="Pawel on the court wearing a blue basketball kit."
-              />
-            </figure>
+          <div class="demo-card reveal">
+            <form id="demo-form">
+              <div class="demo-card-head">
+                <div><small>VISTA DEL CLIENTE</small><strong>Solicita tu actividad</strong></div>
+                <div class="language-switch" aria-label="Seleccionar idioma del cliente">
+                  <button type="button" class="active" data-language="Español" aria-pressed="true">ES</button>
+                  <button type="button" data-language="English" aria-pressed="false">EN</button>
+                  <button type="button" data-language="Deutsch" aria-pressed="false">DE</button>
+                  <button type="button" data-language="Polski" aria-pressed="false">PL</button>
+                </div>
+              </div>
+              <div class="form-grid">
+                <label>
+                  Actividad
+                  <select id="activity" name="activity">
+                    <option>Salida de pesca</option>
+                    <option>Curso náutico</option>
+                    <option>Alquiler de barco</option>
+                    <option>Paddle surf</option>
+                  </select>
+                </label>
+                <label>
+                  Fecha preferida
+                  <input id="date" name="date" type="date" required />
+                </label>
+                <label>
+                  Número de personas
+                  <input id="people" name="people" type="number" min="1" max="30" value="3" required />
+                </label>
+                <label>
+                  Experiencia
+                  <select id="experience" name="experience">
+                    <option>Principiante</option>
+                    <option>Intermedia</option>
+                    <option>Avanzada</option>
+                  </select>
+                </label>
+              </div>
+              <button class="button demo-button" type="submit">Preparar solicitud <span aria-hidden="true">→</span></button>
+            </form>
+
+            <div class="demo-result" id="demo-result" aria-live="polite" hidden>
+              <div class="result-heading"><span>✓</span><div><small>VISTA DEL NEGOCIO</small><strong>Solicitud completa</strong></div></div>
+              <div class="result-message" id="result-message"></div>
+              <button class="copy-button" id="copy-button" type="button">Copiar mensaje</button>
+              <button class="reset-button" id="reset-button" type="button">Crear otra</button>
+            </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section reveal" id="contact">
-          <div class="section-intro">
-            <p class="section-label">Contact</p>
-            <h2>Reach out easily</h2>
+      <section class="section fit-section" aria-labelledby="fit-title">
+        <div class="fit-panel reveal">
+          <div class="fit-copy">
+            <p class="section-kicker">Encaja sin complicar</p>
+            <h2 id="fit-title">Tu proceso sigue siendo tuyo.</h2>
+            <p>CostaReply no gestiona calendarios, cobros ni disponibilidad. Organiza la consulta para que tu equipo tome la decisión.</p>
           </div>
-
-          <div class="contact-grid">
-            <article class="panel panel-large">
-              <p>
-                If you would like to contact me about school, projects, engineering,
-                coding, or basketball, the quickest way is by email.
-              </p>
-              <a class="contact-mail" href="mailto:pawelkazimierczak2010@gmail.com">
-                pawelkazimierczak2010@gmail.com
-              </a>
-            </article>
-
-            <aside class="panel social-panel">
-              <h3>Links</h3>
-              <a
-                href="https://www.instagram.com/pawelkazimierczak2010/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Instagram: @pawelkazimierczak2010
-              </a>
-              <a
-                href="https://github.com/PawelK2010"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub: PawelK2010
-              </a>
-            </aside>
+          <div class="fit-points">
+            <article><span>01</span><div><strong>Sin migraciones</strong><p>Mantienes tu web, WhatsApp y correo actuales.</p></div></article>
+            <article><span>02</span><div><strong>Sin respuestas inventadas</strong><p>Solo utiliza preguntas y reglas aprobadas por tu negocio.</p></div></article>
+            <article><span>03</span><div><strong>Hecho para tu actividad</strong><p>No es el mismo formulario genérico para todos.</p></div></article>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
 
-      <footer class="footer content-shell">
-        <p>&copy; <span id="current-year">2026</span> Pawel Kazimierczak</p>
-      </footer>
-    </div>
+      <section class="section faq-section" aria-labelledby="faq-title">
+        <div class="faq-heading reveal">
+          <p class="section-kicker">Preguntas frecuentes</p>
+          <h2 id="faq-title">Lo esencial, sin letra pequeña.</h2>
+        </div>
+        <div class="faq-list reveal">
+          <details>
+            <summary>¿Sustituye mi sistema de reservas?<span>+</span></summary>
+            <p>No. CostaReply prepara una solicitud completa y la entrega en el canal que ya utilizas. Tú sigues confirmando disponibilidad y cobro.</p>
+          </details>
+          <details>
+            <summary>¿Tengo que instalar algo?<span>+</span></summary>
+            <p>No. El cliente abre un enlace desde tu web, Instagram, código QR o mensaje automático.</p>
+          </details>
+          <details>
+            <summary>¿Puede adaptarse a mis preguntas?<span>+</span></summary>
+            <p>Sí. Cada versión se configura alrededor de tus actividades, restricciones y datos necesarios.</p>
+          </details>
+          <details>
+            <summary>¿Qué idiomas incluye?<span>+</span></summary>
+            <p>La primera versión está preparada para español, inglés, alemán y polaco.</p>
+          </details>
+        </div>
+      </section>
 
-    <script src="script.js"></script>
+      <section class="section closing-section" aria-labelledby="closing-title">
+        <div class="closing-card reveal">
+          <div>
+            <p class="section-kicker light-kicker">Pilotos en Alicante</p>
+            <h2 id="closing-title">Enséñanos una actividad.<br />Te enseñamos la solicitud.</h2>
+          </div>
+          <div class="closing-action">
+            <p>Explora cómo una consulta se convierte en una solicitud completa y lista para responder.</p>
+            <a class="button closing-button" href="#demo">Abrir la demo <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true"><i></i><i></i></span><span>CostaReply</span></a>
+      <p>Reservas claras, desde el primer mensaje.</p>
+      <p class="privacy-note">Esta web no almacena datos ni utiliza cookies.</p>
+    </footer>
+
+    <script type="module" src="./script.js"></script>
   </body>
 </html>

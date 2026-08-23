@@ -1,68 +1,66 @@
-document.body.classList.remove("no-js");
-document.body.classList.add("has-js");
+const form = document.querySelector("#demo-form");
+const result = document.querySelector("#demo-result");
+const resultMessage = document.querySelector("#result-message");
+const languageButtons = document.querySelectorAll("[data-language]");
+const copyButton = document.querySelector("#copy-button");
+const resetButton = document.querySelector("#reset-button");
+let selectedLanguage = "Español";
 
-const yearElement = document.querySelector("#current-year");
-const pageBody = document.body;
-const menuToggle = document.querySelector(".menu-toggle");
-const navMenu = document.querySelector(".nav-links");
-const navLinks = document.querySelectorAll(".nav-links a");
-const revealItems = document.querySelectorAll(".reveal");
+const dateInput = document.querySelector("#date");
+const tomorrow = new Date();
+tomorrow.setDate(tomorrow.getDate() + 1);
+dateInput.min = new Date().toISOString().split("T")[0];
+dateInput.value = tomorrow.toISOString().split("T")[0];
 
-if (yearElement) {
-  yearElement.textContent = String(new Date().getFullYear());
-}
-
-if (menuToggle && navMenu) {
-  const setMenuState = (isOpen) => {
-    navMenu.classList.toggle("is-open", isOpen);
-    menuToggle.setAttribute("aria-expanded", String(isOpen));
-    menuToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
-    pageBody.classList.toggle("menu-open", isOpen);
-  };
-
-  menuToggle.addEventListener("click", () => {
-    setMenuState(!navMenu.classList.contains("is-open"));
-  });
-
-  navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      setMenuState(false);
+languageButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    selectedLanguage = button.dataset.language;
+    languageButtons.forEach((item) => {
+      const active = item === button;
+      item.classList.toggle("active", active);
+      item.setAttribute("aria-pressed", active ? "true" : "false");
     });
   });
+});
 
-  document.addEventListener("click", (event) => {
-    if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
-      setMenuState(false);
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const activity = document.querySelector("#activity").value;
+  const people = document.querySelector("#people").value;
+  const experience = document.querySelector("#experience").value;
+  const date = new Intl.DateTimeFormat("es-ES", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  }).format(new Date(`${dateInput.value}T12:00:00`));
+
+  resultMessage.textContent = `NUEVA SOLICITUD\n\nActividad: ${activity}\nFecha preferida: ${date}\nPersonas: ${people}\nExperiencia: ${experience}\nIdioma del cliente: ${selectedLanguage}\n\nEstado: datos completos para responder`;
+  result.hidden = false;
+  copyButton.focus();
+});
+
+copyButton.addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText(resultMessage.textContent);
+    copyButton.textContent = "Copiado ✓";
+    setTimeout(() => { copyButton.textContent = "Copiar mensaje"; }, 1800);
+  } catch {
+    copyButton.textContent = "Selecciona y copia el texto";
+  }
+});
+
+resetButton.addEventListener("click", () => {
+  result.hidden = true;
+  form.querySelector("select").focus();
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
     }
   });
+}, { threshold: 0.12 });
 
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
-      setMenuState(false);
-    }
-  });
-
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 779) {
-      setMenuState(false);
-    }
-  });
-}
-
-if ("IntersectionObserver" in window) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.16 }
-  );
-
-  revealItems.forEach((item) => observer.observe(item));
-} else {
-  revealItems.forEach((item) => item.classList.add("is-visible"));
-}
+document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
