@@ -235,8 +235,7 @@ footer > p { margin: 0; }
 footer > p:nth-child(2) { text-align: center; }
 .privacy-note { text-align: right; }
 
-.reveal { opacity: 0; transform: translateY(20px); transition: opacity .65s ease, transform .65s ease; }
-.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal { opacity: 1; transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
