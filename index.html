@@ -1,276 +1,122 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="CostaReply convierte consultas incompletas en solicitudes de reserva claras, adaptadas a los idiomas y necesidades de cada negocio."
-    />
-    <meta name="theme-color" content="#0b2730" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="es_ES" />
-    <meta property="og:title" content="CostaReply — Reservas claras, desde el primer mensaje" />
-    <meta property="og:description" content="Solicitudes adaptadas a tus preguntas, reglas e idiomas, sin cambiar las herramientas que ya utilizas." />
-    <meta property="og:image" content="https://pawel.kazimierczak.eu/og.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="CostaReply — Reservas claras, desde el primer mensaje" />
-    <meta name="twitter:description" content="Solicitudes adaptadas a tus preguntas, reglas e idiomas, sin cambiar las herramientas que ya utilizas." />
-    <meta name="twitter:image" content="https://pawel.kazimierczak.eu/og.png" />
-    <title>CostaReply — Reservas claras, desde el primer mensaje</title>
-    <link rel="stylesheet" href="./costareply.css?v=2" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#inicio" aria-label="CostaReply, inicio">
-        <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
-        <span>CostaReply</span>
-      </a>
-      <nav aria-label="Navegación principal">
-        <a href="#como-funciona">Cómo funciona</a>
-        <a href="#demo">Demo</a>
-        <a class="nav-cta" href="#demo">Probar demo</a>
-      </nav>
-    </header>
+<!DOCTYPE html><html lang="es"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/index.BIQj641O.css" data-rsc-css-href="/_next/static/css/index.BIQj641O.css" data-precedence="vite-rsc/importer-resources"/><link rel="modulepreload" fetchPriority="low" href="/_next/static/chunks/index-BmQfV58S.js"/><script src="/_next/static/chunks/rolldown-runtime-C60lm6uB.js" type="module" async=""></script><script src="/_next/static/chunks/framework-D_rUT4EX.js" type="module" async=""></script><link rel="modulepreload" href="/_next/static/chunks/layout-segment-context-BKSxx0RW.js" crossorigin=""/><link rel="modulepreload" href="/_next/static/chunks/page-C3JXxXkT.js" crossorigin=""/><title>Retapio — Toca. Suma. Vuelve.</title><meta name="description" content="Fidelización sin app para cafeterías y locales independientes. Un toque seguro, visitas medibles y recompensas sencillas."/><script>Object.assign(((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}),{params:{},nav:{"pathname":"/","searchParams":[]}})</script><link rel="modulepreload" href="/_next/static/chunks/index-BmQfV58S.js" />
+<link rel="preload" href="/_next/static/_vinext_fonts/inter-9df0d028785c/inter-1ab1ad55.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/_next/static/_vinext_fonts/space-grotesk-feef4dc31705/space-grotesk-a57c9413.woff2" as="font" type="font/woff2" crossorigin />
+<style data-vinext-fonts>/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/inter-9df0d028785c/inter-7249155f.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/inter-9df0d028785c/inter-e34c5f1b.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/inter-9df0d028785c/inter-6e1a6b2b.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/inter-9df0d028785c/inter-656bbed6.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/inter-9df0d028785c/inter-fc83e075.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/inter-9df0d028785c/inter-749a3084.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/inter-9df0d028785c/inter-1ab1ad55.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
-    <main id="inicio">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow"><span></span> Reservas más claras. Menos mensajes.</p>
-          <h1 id="hero-title">De una consulta incompleta a una reserva lista para responder.</h1>
-          <p class="hero-text">
-            CostaReply se adapta a tus actividades, preguntas, requisitos e idiomas. Cada cliente responde en su idioma y tu equipo recibe todo ordenado en el canal que ya utiliza.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#demo">Probar la demo <span aria-hidden="true">→</span></a>
-            <a class="button button-secondary" href="#como-funciona">Ver cómo funciona</a>
-          </div>
-          <div class="hero-notes" aria-label="Características principales">
-            <span>Sin límite fijo de idiomas</span>
-            <span>Sin cambiar tu WhatsApp</span>
-            <span>Sin instalar una app</span>
-          </div>
-        </div>
+@font-face {
+  font-family: 'Inter Fallback';
+  src: local("Arial");
+  ascent-override: 90.44%;
+  descent-override: 22.52%;
+  line-gap-override: 0.00%;
+  size-adjust: 107.12%;
+}
 
-        <div class="hero-product" aria-label="Ejemplo de una solicitud organizada en CostaReply">
-          <div class="product-glow"></div>
-          <div class="browser-card">
-            <div class="browser-top"><span></span><span></span><span></span><b>costareply.es/demo</b></div>
-            <div class="request-head">
-              <div class="request-icon">CR</div>
-              <div><small>NUEVA SOLICITUD</small><strong>Salida de pesca</strong></div>
-              <span class="status">Completa</span>
-            </div>
-            <div class="request-grid">
-              <div><small>Fecha preferida</small><strong>28 agosto · 09:00</strong></div>
-              <div><small>Grupo</small><strong>3 adultos</strong></div>
-              <div><small>Experiencia</small><strong>Principiantes</strong></div>
-              <div><small>Idioma</small><strong>Deutsch</strong></div>
-            </div>
-            <div class="message-preview"><span>✓</span><p>Solicitud preparada para enviar por WhatsApp</p></div>
-          </div>
-          <div class="floating-chip chip-one">Idiomas a medida</div>
-          <div class="floating-chip chip-two">Todo en un mensaje</div>
-        </div>
-      </section>
+.__font_inter_1nj207z { font-family: 'Inter', 'Inter Fallback'; font-style: normal; }
 
-      <section class="signal-strip" aria-label="Propuesta de valor">
-        <p>Creado para negocios que trabajan mientras sus clientes escriben.</p>
-        <div>
-          <span>Escuelas náuticas</span>
-          <span>Alquiler de barcos</span>
-          <span>Surf y paddle</span>
-          <span>Experiencias y tours</span>
-        </div>
-      </section>
+.__variable_inter_1nj207z { --font-inter: 'Inter', 'Inter Fallback'; }
 
-      <section class="section steps-section" id="como-funciona" aria-labelledby="steps-title">
-        <div class="section-heading reveal">
-          <p class="section-kicker">Cómo funciona</p>
-          <h2 id="steps-title">Una entrada clara.<br />Una respuesta más rápida.</h2>
-          <p>CostaReply se coloca antes de tu WhatsApp o correo. No obliga a tu equipo a aprender otra herramienta.</p>
-        </div>
-        <div class="steps-grid">
-          <article class="step-card reveal">
-            <span class="step-number">01</span>
-            <div class="step-symbol question-symbol" aria-hidden="true">?</div>
-            <h3>El cliente responde</h3>
-            <p>Actividad, fecha, personas y requisitos en su propio idioma.</p>
-          </article>
-          <article class="step-card reveal">
-            <span class="step-number">02</span>
-            <div class="step-symbol sort-symbol" aria-hidden="true"><i></i><i></i><i></i></div>
-            <h3>CostaReply ordena</h3>
-            <p>Valida los campos necesarios y prepara un resumen sin datos olvidados.</p>
-          </article>
-          <article class="step-card reveal">
-            <span class="step-number">03</span>
-            <div class="step-symbol send-symbol" aria-hidden="true">↗</div>
-            <h3>Tu equipo lo recibe</h3>
-            <p>Un solo mensaje estructurado en el canal que ya utilizáis.</p>
-          </article>
-        </div>
-      </section>
+/* vietnamese */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/space-grotesk-feef4dc31705/space-grotesk-53435720.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/space-grotesk-feef4dc31705/space-grotesk-e911c2d9.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/space-grotesk-feef4dc31705/space-grotesk-a57c9413.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
-      <section class="section comparison-section" aria-labelledby="comparison-title">
-        <div class="comparison-copy reveal">
-          <p class="section-kicker">El cambio</p>
-          <h2 id="comparison-title">Menos conversación administrativa. Más reservas listas para cerrar.</h2>
-          <p>No automatizamos la relación con tu cliente. Quitamos las preguntas repetidas que ocurren antes de poder ayudarle.</p>
-          <ul class="check-list">
-            <li>Preguntas distintas para cada actividad</li>
-            <li>Información en español para tu equipo</li>
-            <li>Configuración adaptada a tus reglas</li>
-          </ul>
-        </div>
-        <div class="conversation-board reveal" aria-label="Comparación entre una consulta normal y una solicitud CostaReply">
-          <div class="conversation-column before-column">
-            <div class="column-label"><span></span> Sin CostaReply</div>
-            <div class="chat-bubble incoming">Hola, ¿tenéis sitio?</div>
-            <div class="chat-bubble outgoing">¡Hola! ¿Para qué actividad y qué día?</div>
-            <div class="chat-bubble incoming short">Para pesca.</div>
-            <div class="chat-bubble outgoing">¿Cuántas personas sois?</div>
-            <p class="thread-note">4 mensajes y aún faltan datos</p>
-          </div>
-          <div class="conversation-column after-column">
-            <div class="column-label"><span></span> Con CostaReply</div>
-            <div class="structured-message">
-              <small>SOLICITUD COMPLETA</small>
-              <strong>Salida de pesca</strong>
-              <dl>
-                <div><dt>Fecha</dt><dd>28 agosto</dd></div>
-                <div><dt>Grupo</dt><dd>3 adultos</dd></div>
-                <div><dt>Nivel</dt><dd>Principiante</dd></div>
-                <div><dt>Idioma</dt><dd>Alemán</dd></div>
-              </dl>
-            </div>
-            <p class="thread-note ready-note">Lista para responder</p>
-          </div>
-        </div>
-      </section>
+@font-face {
+  font-family: 'Space Grotesk Fallback';
+  src: local("Arial");
+  ascent-override: 89.71%;
+  descent-override: 26.62%;
+  line-gap-override: 0.00%;
+  size-adjust: 109.69%;
+}
 
-      <section class="demo-section" id="demo" aria-labelledby="demo-title">
-        <div class="section demo-wrap">
-          <div class="demo-intro reveal">
-            <p class="section-kicker light-kicker">Demo interactiva</p>
-            <h2 id="demo-title">Prueba el mensaje que recibiría tu equipo.</h2>
-            <p>Los cuatro idiomas de esta demo son solo ejemplos. CostaReply puede adaptarse al idioma de tus clientes y a las preguntas, reglas y necesidades de tu negocio.</p>
-            <div class="language-list" aria-label="Ejemplos de idiomas disponibles">
-              <span>Español</span><span>English</span><span>Deutsch</span><span>Polski</span><span>Sin límite fijo</span>
-            </div>
-          </div>
+.__font_space_grotesk_1w43504 { font-family: 'Space Grotesk', 'Space Grotesk Fallback'; font-style: normal; }
 
-          <div class="demo-card reveal">
-            <form id="demo-form">
-              <div class="demo-card-head">
-                <div><small>VISTA DEL CLIENTE</small><strong>Solicita tu actividad</strong></div>
-                <div class="language-switch" aria-label="Seleccionar idioma del cliente">
-                  <button type="button" class="active" data-language="Español" aria-pressed="true">ES</button>
-                  <button type="button" data-language="English" aria-pressed="false">EN</button>
-                  <button type="button" data-language="Deutsch" aria-pressed="false">DE</button>
-                  <button type="button" data-language="Polski" aria-pressed="false">PL</button>
-                </div>
-              </div>
-              <div class="form-grid">
-                <label>
-                  Actividad
-                  <select id="activity" name="activity">
-                    <option>Salida de pesca</option>
-                    <option>Curso náutico</option>
-                    <option>Alquiler de barco</option>
-                    <option>Paddle surf</option>
-                  </select>
-                </label>
-                <label>
-                  Fecha preferida
-                  <input id="date" name="date" type="date" required />
-                </label>
-                <label>
-                  Número de personas
-                  <input id="people" name="people" type="number" min="1" max="30" value="3" required />
-                </label>
-                <label>
-                  Experiencia
-                  <select id="experience" name="experience">
-                    <option>Principiante</option>
-                    <option>Intermedia</option>
-                    <option>Avanzada</option>
-                  </select>
-                </label>
-              </div>
-              <button class="button demo-button" type="submit">Preparar solicitud <span aria-hidden="true">→</span></button>
-            </form>
-
-            <div class="demo-result" id="demo-result" aria-live="polite" hidden>
-              <div class="result-heading"><span>✓</span><div><small>VISTA DEL NEGOCIO</small><strong>Solicitud completa</strong></div></div>
-              <div class="result-message" id="result-message"></div>
-              <button class="copy-button" id="copy-button" type="button">Copiar mensaje</button>
-              <button class="reset-button" id="reset-button" type="button">Crear otra</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section fit-section" aria-labelledby="fit-title">
-        <div class="fit-panel reveal">
-          <div class="fit-copy">
-            <p class="section-kicker">Adaptado a tu negocio</p>
-            <h2 id="fit-title">Nos adaptamos a tu forma de trabajar.</h2>
-            <p>Cada flujo se configura según tus actividades, preguntas, reglas e idiomas. Tu equipo conserva el control sobre disponibilidad, cobros y decisiones.</p>
-          </div>
-          <div class="fit-points">
-            <article><span>01</span><div><strong>Sin migraciones</strong><p>Mantienes tu web, WhatsApp y correo actuales.</p></div></article>
-            <article><span>02</span><div><strong>Tus reglas y preguntas</strong><p>Recogemos exactamente los datos que necesita tu negocio.</p></div></article>
-            <article><span>03</span><div><strong>Idiomas que necesites</strong><p>No trabajamos con un catálogo cerrado de idiomas.</p></div></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section faq-section" aria-labelledby="faq-title">
-        <div class="faq-heading reveal">
-          <p class="section-kicker">Preguntas frecuentes</p>
-          <h2 id="faq-title">Lo esencial, sin letra pequeña.</h2>
-        </div>
-        <div class="faq-list reveal">
-          <details>
-            <summary>¿Sustituye mi sistema de reservas?<span>+</span></summary>
-            <p>No. CostaReply prepara una solicitud completa y la entrega en el canal que ya utilizas. Tú sigues confirmando disponibilidad y cobro.</p>
-          </details>
-          <details>
-            <summary>¿Tengo que instalar algo?<span>+</span></summary>
-            <p>No. El cliente abre un enlace desde tu web, Instagram, código QR o mensaje automático.</p>
-          </details>
-          <details>
-            <summary>¿Puede adaptarse a mi negocio?<span>+</span></summary>
-            <p>Sí. Configuramos las actividades, preguntas, restricciones, datos e idiomas según tus necesidades y tu forma de trabajar.</p>
-          </details>
-          <details>
-            <summary>¿Qué idiomas incluye?<span>+</span></summary>
-            <p>No hay un catálogo cerrado ni un límite fijo de idiomas. Los cuatro de la demo son solo ejemplos; preparamos cada versión para los idiomas que necesite tu negocio.</p>
-          </details>
-        </div>
-      </section>
-
-      <section class="section closing-section" aria-labelledby="closing-title">
-        <div class="closing-card reveal">
-          <div>
-            <p class="section-kicker light-kicker">Pilotos en Alicante</p>
-            <h2 id="closing-title">Enséñanos una actividad.<br />Te enseñamos la solicitud.</h2>
-          </div>
-          <div class="closing-action">
-            <p>Explora cómo una consulta se convierte en una solicitud completa y lista para responder.</p>
-            <a class="button closing-button" href="#demo">Abrir la demo <span aria-hidden="true">→</span></a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true"><i></i><i></i></span><span>CostaReply</span></a>
-      <p>Reservas claras, desde el primer mensaje.</p>
-      <p class="privacy-note">Esta web no almacena datos ni utiliza cookies.</p>
-    </footer>
-
-    <script type="module" src="./costareply.js?v=2"></script>
-  </body>
-</html>
+.__variable_space_grotesk_1w43504 { --font-space-grotesk: 'Space Grotesk', 'Space Grotesk Fallback'; }
+</style>
+</head><body class="__variable_inter_1nj207z __variable_space_grotesk_1w43504"><main><header class="site-header"><a class="brand" href="#inicio" aria-label="Retapio, inicio"><svg aria-hidden="true" class="brand-mark" viewBox="0 0 62 62" fill="none"><path d="M13 48V29.5C13 19.3 20.4 12 30 12c9.3 0 16.5 6.8 16.5 15.6 0 8.9-7 15.4-16.3 15.4H22" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path><path d="m29.5 43 14.8 12.2M51.5 23.2c2.4 3.1 3.5 6.5 3.5 10.4" stroke="currentColor" stroke-width="5" stroke-linecap="round"></path><circle cx="30" cy="27.5" r="3.7" fill="#4e63ff"></circle></svg><span>retapio</span></a><nav aria-label="Navegación principal"><a href="#como-funciona">Cómo funciona</a><a href="#seguridad">Seguridad</a><a href="#para-tu-local">Para tu local</a></nav><a href="mailto:pawel.kazimierczak@gmail.com?subject=Quiero%20ver%20Retapio&amp;body=Hola%20Pawel%2C%0A%0AQuiero%20ver%20Retapio%20en%20una%20demo%20de%2010%20minutos%20y%20valorar%20si%20encaja%20en%20mi%20local.%0A%0AMi%20local%20se%20llama%3A%20" aria-label="Solicitar una demo de Retapio" type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 bg-primary text-primary-foreground hover:bg-primary/80 h-9 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 header-cta">Solicitar demo<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true" data-icon="inline-end"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a></header><section class="hero" id="inicio"><div class="hero-copy"><p class="eyebrow"><span></span> Fidelización sin app para cafeterías</p><h1>Haz que una visita se convierta en <em>costumbre.</em></h1><p class="hero-lead">El cliente acerca el móvil, suma una visita y ve cuánto le falta para su recompensa. Tu equipo sigue cobrando exactamente como siempre.</p><div class="hero-actions"><a href="mailto:pawel.kazimierczak@gmail.com?subject=Quiero%20ver%20Retapio&amp;body=Hola%20Pawel%2C%0A%0AQuiero%20ver%20Retapio%20en%20una%20demo%20de%2010%20minutos%20y%20valorar%20si%20encaja%20en%20mi%20local.%0A%0AMi%20local%20se%20llama%3A%20" aria-label="Solicitar una demo de Retapio" type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 bg-primary text-primary-foreground hover:bg-primary/80 h-9 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 primary-cta">Solicitar una demo<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true" data-icon="inline-end"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a><a href="#demo-toque" aria-label="Ver la demostración interactiva del toque NFC" type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-lg border bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50 h-9 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 secondary-cta">Ver el toque en acción</a></div><ul class="hero-proof" aria-label="Ventajas del piloto"><li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> Sin app</li><li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> Sin integración con el TPV</li><li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> Pilotos seleccionados en Alicante</li></ul></div><figure class="hero-visual tap-idle" id="demo-toque"><img src="/images/01-retapio-hero-studio.jpg" alt="Punto Retapio de madera junto a una taza de café" loading="eager" fetchPriority="high" decoding="async" data-nimg="fill" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/><span class="nfc-origin" aria-hidden="true"><i></i><i></i><i></i></span><figcaption class="tap-console" aria-live="polite"><div class="tap-console-head"><span class="tap-state-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></svg></span><span><small>Prueba interactiva</small><strong>Simula el toque</strong></span></div><div class="tap-progress" aria-label="6 de 8 visitas"><span class="complete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span><span class="complete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span><span class="complete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span><span class="complete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span><span class="complete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span><span class="complete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span><span class="">7</span><span class="">8</span></div><button class="tap-button" type="button">Simular un toque<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></figcaption></figure></section><section class="signal-strip" aria-label="Resumen del producto"><p>Un gesto de dos segundos.</p><span></span><p>Una visita verificable.</p><span></span><p>Una razón clara para volver.</p></section><section class="experience-section" id="como-funciona"><div class="experience-photo"><img src="/images/02-retapio-cafe-counter.jpg" alt="Cliente usando Retapio con su móvil en la barra de una cafetería" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/><span class="photo-label">En la barra · 2 segundos</span></div><div class="experience-copy"><p class="section-index">01 / Cómo funciona</p><h2>Tocar, confirmar y seguir con el día.</h2><p>Retapio vive junto a la caja. No interrumpe el servicio y no obliga al cliente a descargar nada.</p><ol class="compact-steps"><li><span>01</span><div><strong>Acerca</strong><p>El móvil detecta el punto NFC y abre Retapio.</p></div></li><li><span>02</span><div><strong>Confirma</strong><p>La primera vez crea un acceso seguro con Face ID, huella o PIN.</p></div></li><li><span>03</span><div><strong>Vuelve</strong><p>Consulta su progreso desde casa; solo suma en el local.</p></div></li></ol></div></section><section class="steps-section"><div class="section-heading"><p class="section-index">El recorrido completo</p><h2>Simple para el cliente. Invisible para el equipo.</h2><p>Cada paso reduce fricción sin añadir trabajo en hora punta.</p></div><div class="steps-grid"><article><span class="step-number">01</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></svg><h3>Un toque</h3><p>Acerca la parte superior del móvil al punto Retapio.</p></article><article><span class="step-number">02</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-fingerprint-pattern" aria-hidden="true"><path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4"></path><path d="M14 13.12c0 2.38 0 6.38-1 8.88"></path><path d="M17.29 21.02c.12-.6.43-2.3.5-3.02"></path><path d="M2 12a10 10 0 0 1 18-6"></path><path d="M2 16h.01"></path><path d="M21.8 16c.2-2 .131-5.354 0-6"></path><path d="M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2"></path><path d="M8.65 22c.21-.66.45-1.32.57-2"></path><path d="M9 6.8a6 6 0 0 1 9 5.2v2"></path></svg><h3>Una identidad</h3><p>Una passkey reconoce a la persona sin contraseñas ni cookies frágiles.</p></article><article><span class="step-number">03</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock3 lucide-clock-3" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6h4"></path></svg><h3>Un motivo</h3><p>El progreso visible da una razón concreta para volver.</p></article></div></section><section class="presence-section" id="seguridad"><div class="presence-copy"><p class="section-index light">02 / Presencia real</p><h2>Guardar el enlace no sirve para sumar.</h2><p>El NFC seguro genera una lectura autenticada distinta cada vez. Se puede mirar el progreso desde casa, pero hace falta volver al punto físico para añadir una visita.</p><ul><li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> Lectura NFC autenticada</li><li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> Límite de tiempo entre visitas</li><li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> Intentos repetidos señalados</li></ul></div><div class="security-visual"><img src="/images/03-retapio-nfc-closeup.jpg" alt="Primer plano de un móvil leyendo el punto NFC seguro de Retapio" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/><div class="verification-card"><div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock-keyhole" aria-hidden="true"><circle cx="12" cy="16" r="1"></circle><rect x="3" y="10" width="18" height="12" rx="2"></rect><path d="M7 10V7a5 5 0 0 1 10 0v3"></path></svg><span>Lectura en el local</span></div><strong><i></i> Verificada</strong></div></div></section><section class="merchant-section" id="para-tu-local"><div class="merchant-copy"><p class="section-index">03 / Para tu local</p><h2>Lo ves en una web. No conectas nada a la caja.</h2><p>El responsable abre su panel Retapio en cualquier ordenador o móvil. Ahí ve altas, visitas verificadas, retornos y recompensas, sin instalar un programa ni tocar el TPV.</p><div class="merchant-points"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> Acceso desde el navegador</span><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> Métricas agregadas y exportables</span><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> Recompensa y límites configurables</span></div></div><div class="dashboard-card" aria-label="Demostración interactiva del panel del local"><div class="dashboard-head"><span><svg aria-hidden="true" class="" viewBox="0 0 62 62" fill="none"><path d="M13 48V29.5C13 19.3 20.4 12 30 12c9.3 0 16.5 6.8 16.5 15.6 0 8.9-7 15.4-16.3 15.4H22" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path><path d="m29.5 43 14.8 12.2M51.5 23.2c2.4 3.1 3.5 6.5 3.5 10.4" stroke="currentColor" stroke-width="5" stroke-linecap="round"></path><circle cx="30" cy="27.5" r="3.7" fill="#4e63ff"></circle></svg> retapio</span><div class="period-switch" aria-label="Periodo del panel"><button type="button" aria-pressed="false">7 días</button><button type="button" aria-pressed="true">30 días</button></div></div><div class="dashboard-title"><span><small>Tu cafetería</small><strong>Resumen del piloto</strong></span><span class="dashboard-status"><i></i> En directo</span></div><div class="metric-grid metric-swap"><article><small>Visitas verificadas</small><strong>428</strong><span>+18% vs. periodo anterior</span></article><article><small>Clientes que vuelven</small><strong>31%</strong><span>Segunda visita o más</span></article><article><small>Recompensas</small><strong>24</strong><span>Canjes confirmados</span></article></div><div class="mini-chart"><div class="chart-label"><span>Visitas por día</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg></div><div class="bars" aria-hidden="true"><i style="height:38px;animation-delay:0ms"></i><i style="height:55px;animation-delay:35ms"></i><i style="height:43px;animation-delay:70ms"></i><i style="height:72px;animation-delay:105ms"></i><i style="height:64px;animation-delay:140ms"></i><i style="height:88px;animation-delay:175ms"></i><i style="height:77px;animation-delay:210ms"></i><i style="height:98px;animation-delay:245ms"></i><i style="height:82px;animation-delay:280ms"></i><i style="height:108px;animation-delay:315ms"></i><i style="height:96px;animation-delay:350ms"></i><i style="height:124px;animation-delay:385ms"></i></div></div><p class="demo-disclaimer">Datos demostrativos. El piloto mostrará los datos reales de tu local.</p></div></section><section class="hardware-section"><div class="hardware-photo"><img src="/images/04-retapio-product-views.jpg" alt="Vistas frontal, lateral y en perspectiva del punto Retapio de madera" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/></div><div class="hardware-copy"><p class="section-index">04 / El punto Retapio</p><h2>Diseñado para vivir en la barra.</h2><p>Madera natural, NFC pasivo y un mensaje que se entiende de un vistazo. No se carga, no se enciende y no ocupa una toma de corriente.</p><dl><div><dt>Energía</dt><dd>Ninguna</dd></div><div><dt>Instalación</dt><dd>10 minutos</dd></div><div><dt>Uso</dt><dd>iPhone y Android</dd></div></dl></div></section><section class="pilot-section" id="piloto"><div class="pilot-photo"><img src="/images/05-retapio-alicante-campaign.jpg" alt="Punto Retapio en una cafetería independiente de Alicante" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/></div><div class="pilot-card"><div><p class="section-index light">Selección presencial · Alicante</p><h2>Un piloto de 30 días para algunos locales.</h2><p>Visitamos el local y comprobamos juntos si encaja. A las cafeterías seleccionadas les instalamos Retapio durante 30 días sin coste ni permanencia, a cambio de feedback y métricas agregadas del piloto.</p></div><div class="pilot-includes"><p>El piloto incluye</p><ul><li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> Punto NFC Retapio</li><li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> Configuración y panel</li><li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> Seguimiento semanal</li><li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> Informe final</li></ul><a class="copy-reply" href="mailto:pawel.kazimierczak@gmail.com?subject=Quiero%20ver%20Retapio&amp;body=Hola%20Pawel%2C%0A%0AQuiero%20ver%20Retapio%20en%20una%20demo%20de%2010%20minutos%20y%20valorar%20si%20encaja%20en%20mi%20local.%0A%0AMi%20local%20se%20llama%3A%20"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span><strong>Quiero una demo de 10 minutos</strong></a></div></div></section><section class="faq-section"><div class="faq-heading"><p class="section-index">05 / Preguntas claras</p><h2>Lo esencial antes de ponerlo en la barra.</h2></div><div class="faq-list"><details open=""><summary>¿Tengo que conectar Retapio a mi caja?</summary><p>No. En el piloto medimos visitas verificadas, no compras ni facturación.</p></details><details><summary>¿El cliente necesita una aplicación?</summary><p>No. Se abre como una web y usa la seguridad que ya tiene el móvil.</p></details><details><summary>¿Voy a regalar cafés a quienes ya venían?</summary><p>La recompensa, el número de visitas y los límites los decide el local. El piloto permite medir el coste real antes de mantenerlo.</p></details><details><summary>¿Qué tiene que hacer el equipo?</summary><p>Nada para sumar. Al canjear, confirma un código de un solo uso desde el panel.</p></details><details><summary>¿Qué datos recibe la cafetería?</summary><p>Métricas agregadas de uso, retorno y recompensas. Los datos personales no se comparten sin consentimiento.</p></details></div></section><section class="closing-section"><svg aria-hidden="true" class="closing-mark" viewBox="0 0 62 62" fill="none"><path d="M13 48V29.5C13 19.3 20.4 12 30 12c9.3 0 16.5 6.8 16.5 15.6 0 8.9-7 15.4-16.3 15.4H22" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path><path d="m29.5 43 14.8 12.2M51.5 23.2c2.4 3.1 3.5 6.5 3.5 10.4" stroke="currentColor" stroke-width="5" stroke-linecap="round"></path><circle cx="30" cy="27.5" r="3.7" fill="#4e63ff"></circle></svg><p>Toca. Suma. Vuelve.</p><h2>La fidelización debería sentirse así de sencilla.</h2><a href="mailto:pawel.kazimierczak@gmail.com?subject=Quiero%20ver%20Retapio&amp;body=Hola%20Pawel%2C%0A%0AQuiero%20ver%20Retapio%20en%20una%20demo%20de%2010%20minutos%20y%20valorar%20si%20encaja%20en%20mi%20local.%0A%0AMi%20local%20se%20llama%3A%20" aria-label="Solicitar una demo de Retapio" type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 bg-primary text-primary-foreground hover:bg-primary/80 h-9 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 closing-cta">Solicitar una demo<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true" data-icon="inline-end"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a><small>Los pilotos gratuitos se asignan tras una visita presencial.</small></section><footer><a class="brand footer-brand" href="#inicio"><svg aria-hidden="true" class="brand-mark" viewBox="0 0 62 62" fill="none"><path d="M13 48V29.5C13 19.3 20.4 12 30 12c9.3 0 16.5 6.8 16.5 15.6 0 8.9-7 15.4-16.3 15.4H22" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path><path d="m29.5 43 14.8 12.2M51.5 23.2c2.4 3.1 3.5 6.5 3.5 10.4" stroke="currentColor" stroke-width="5" stroke-linecap="round"></path><circle cx="30" cy="27.5" r="3.7" fill="#4e63ff"></circle></svg><span>retapio</span></a><p>Fidelización física, sencilla y medible.</p><span>© 2026 Retapio</span></footer></main><script type="module" src="/_next/static/chunks/index-BmQfV58S.js" id="_R_" async=""></script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("2:I[\"8c0f216c4604\",[],\"Children\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("3:I[\"593f344dc510\",[],\"GlobalErrorBoundary\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("4:I[\"0b874ad30386\",[],\"default\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("5:I[\"593f344dc510\",[],\"ErrorBoundary\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("6:I[\"15c18cfaeeff\",[],\"LayoutSegmentProvider\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("7:I[\"8c0f216c4604\",[],\"Slot\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("8:I[\"593f344dc510\",[],\"NotFoundBoundary\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("9:I[\"9276801271d6\",[],\"AppRouterScrollTarget\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("a:I[\"593f344dc510\",[],\"RedirectBoundary\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push(":HL[\"/_next/static/css/index.BIQj641O.css\",\"style\"     ]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("0:{\"page:/\":\"$L1\",\"layout:/\":[[[\"$\",\"link\",\"css:/_next/static/css/index.BIQj641O.css\",{\"rel\":\"stylesheet\",\"precedence\":\"vite-rsc/importer-resources\",\"href\":\"/_next/static/css/index.BIQj641O.css\",\"data-rsc-css-href\":\"/_next/static/css/index.BIQj641O.css\"}],\"$undefined\"],[\"$\",\"html\",null,{\"lang\":\"es\",\"children\":[\"$\",\"body\",null,{\"className\":\"__variable_inter_1nj207z __variable_space_grotesk_1w43504\",\"children\":[\"$\",\"$L2\",null,{}]}]}]],\"route:/\":[[[\"$\",\"meta\",null,{\"charSet\":\"utf-8\"}],[[\"$\",\"title\",\"0\",{\"children\":\"Retapio — Toca. Suma. Vuelve.\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Fidelización sin app para cafeterías y locales independientes. Un toque seguro, visitas medibles y recompensas sencillas.\"}]],[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]],[\"$\",\"$L3\",null,{\"fallback\":\"$4\",\"children\":[\"$\",\"$L5\",null,{\"fallback\":\"$4\",\"children\":[\"$\",\"$L6\",null,{\"providerId\":\"layout:/\",\"segmentMap\":{\"children\":[]},\"children\":[\"$\",\"$L7\",null,{\"id\":\"layout:/\",\"parallelSlots\":\"$undefined\",\"children\":[\"$\",\"$L8\",null,{\"resetKey\":\"\",\"fallback\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"children\":[\"$\",\"$L9\",null,{\"children\":[\"$\",\"$La\",null,{\"children\":[[\"$\",\"$L6\",null,{\"providerId\":\"page:/\",\"segmentMap\":{\"children\":[\"__PAGE__\"]},\"children\":[\"$\",\"$L7\",null,{\"id\":\"page:/\"}]}],null]}]}]}]}]}]}]}],null,null],\"__route\":\"route:/\",\"__interceptionContext\":null,\"__layoutIds\":[\"layout:/\"],\"__rootLayout\":\"/\",\"__bfcacheSegmentIdentities\":{\"layout:/\":\"[\\\"layout\\\",\\\"layout:/\\\",\\\"root-boundary:/\\\",\\\"\\\"]\",\"page:/\":\"[\\\"page\\\",\\\"page:/\\\",\\\"root-boundary:/\\\",\\\"\\\"]\"},\"__srcPage\":[\"page\"],\"__layoutFlags\":{\"layout:/\":\"s\"},\"__artifactCompatibility\":{\"schemaVersion\":1,\"graphVersion\":\"app-route-graph:1177fd80f83fa7b0\",\"deploymentVersion\":\"f3b6727c-4926-40f6-a9c9-220fcefc6bbe\",\"appElementsSchemaVersion\":1,\"rscPayloadSchemaVersion\":1,\"rootBoundaryId\":\"/\",\"renderEpoch\":null}}\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("b:I[\"6efdf509a785\",[],\"default\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("1:[\"$\",\"$Lb\",null,{\"params\":\"$@c\",\"searchParams\":\"$@d\"}]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("c:{}\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("d:{}\n")</script><script>Object.assign(((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}),{"initialCacheKind":"dynamic"});((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).done=true</script></body></html>
