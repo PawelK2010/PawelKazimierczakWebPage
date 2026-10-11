@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# ChatGPT search discovery. Training crawler policy remains unchanged.
+User-agent: OAI-SearchBot
+Allow: /
+
 Sitemap: https://retapio.eu/sitemap.xml
